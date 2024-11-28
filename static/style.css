@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Matrix_code.svg/1200px-Matrix_code.svg.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ロゴ用スタイル */
+#logo-container {
+    position: fixed;
+    top: 10px;
+    left: 10px; /* 修正: ロゴを左上に配置 */
+    z-index: 10;
+}
+
+.logo {
+    width: 120px; /* ロゴの幅を調整 */
+    height: auto;
+}
+
+/* メインコンテナ */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* キャラクター画像用スタイル */
+#character-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* 修正: 余白を追加 */
+}
+
+.character-image {
+    width: auto; /* 横幅を自動調整 */
+    max-width: 250px; /* 最大幅の制限 */
+    height: auto; /* 縦横比を維持 */
+    max-height: 500px; /* 最大高さの制限 */
+    z-index: 5;
+}
+
+/* チャットボックス */
+.chat-box {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+/* 入力ボックス */
+.input-box {
+    width: 60%;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Matrix 背景 */
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+}
