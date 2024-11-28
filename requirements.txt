@@ -85,6 +85,7 @@ regex==2024.11.6
 requests==2.32.3
 requests-toolbelt==1.0.0
 rich==13.3.2
+swig
 semver==3.0.2
 six==1.16.0
 smmap==5.0.1
